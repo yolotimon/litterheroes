@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ScareTrigger
+  - coin
+  - death
+  - End
+  - wall
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - ScareTrigger
+  - UIbackground
+  - secret
+  - UI2
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: background
+    uniqueID: 2373599091
+    locked: 0
+  - name: balloons
+    uniqueID: 1989704597
+    locked: 0
+  - name: yes
+    uniqueID: 2810149749
+    locked: 0
+  - name: geheime kamer
+    uniqueID: 744810851
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
