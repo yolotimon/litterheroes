@@ -9,6 +9,8 @@ TagManager:
   - death
   - End
   - wall
+  - PowerUp
+  - heartPowerUp
   layers:
   - Default
   - TransparentFX

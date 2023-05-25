@@ -30,7 +30,22 @@ public class Hearts : MonoBehaviour
 
         if (AIChaise.health <= 0)
         {
-            heart1.enabled = false;
+            heart3.enabled = false;
+        }
+
+        if (AIChaise.health >= 3)
+        {
+            heart1.enabled = true;
+        }
+
+        if (AIChaise.health >= 2)
+        {
+            heart2.enabled = true;
+        }
+
+        if (AIChaise.health >= 1)
+        {
+            heart3.enabled = true;
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level2Finish : MonoBehaviour
+public class Level1Finish : MonoBehaviour
 {
 
 
@@ -23,8 +23,10 @@ public class Level2Finish : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && SC_2DCoin.totalCoins >= 20)
         {
-            SceneManager.LoadScene("level2end");
+            SceneManager.LoadScene("level1end");
             Debug.Log("Level completed");
+            AIChaise.health = 3;
+            PowerUpPick.PowerUps = 0;
         }
 
         else if (collision.gameObject.CompareTag("Player") && SC_2DCoin.totalCoins < 20)

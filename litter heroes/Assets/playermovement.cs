@@ -73,4 +73,20 @@ void Update()
         transform.localScale = localScale;
         }
     }
+
+    public bool canAttack()
+    {
+        return horizontal == 0 && IsGrounded() && PowerUpPick.PowerUps >= 1;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("heartPowerUp") && AIChaise.health <= 2)
+        {
+            AIChaise.health++;
+            Debug.Log("you gained an extra life");
+            Destroy(collision.gameObject);
+        }
+    }
+
 }
