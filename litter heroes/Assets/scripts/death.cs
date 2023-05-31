@@ -28,14 +28,20 @@ public class death : MonoBehaviour
         {
             Die();
         }
+
+        if (Timer.timeLeft == 0)
+        {
+            Die();
+        }
     }
 
-    private void Die()
+    public void Die()
     {
         //transform.position = new Vector3(-10, -2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         AIChaise.health = 3;
         SC_2DCoin.totalCoins = 0;
         Debug.Log("You died and lost all your coins!");
+        Timer.timeLeft = 60f;
     }
 }

@@ -48,6 +48,12 @@ TagManager:
   - name: background
     uniqueID: 2373599091
     locked: 0
+  - name: deur achtergond
+    uniqueID: 2027092125
+    locked: 0
+  - name: de deur
+    uniqueID: 795859173
+    locked: 0
   - name: balloons
     uniqueID: 1989704597
     locked: 0

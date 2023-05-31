@@ -21,7 +21,7 @@ public class Level1Finish : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && SC_2DCoin.totalCoins >= 20)
+        if (collision.gameObject.CompareTag("Player") && SC_2DCoin.totalCoins == 14)
         {
             SceneManager.LoadScene("level1end");
             Debug.Log("Level completed");
