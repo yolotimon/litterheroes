@@ -33,6 +33,16 @@ public class death : MonoBehaviour
         {
             Die();
         }
+
+        if (Timer1.timeLeft == 0)
+        {
+            Die();
+        }
+
+        if (Timer2.timeLeft == 0)
+        {
+            Die();
+        }
     }
 
     public void Die()
@@ -43,5 +53,7 @@ public class death : MonoBehaviour
         SC_2DCoin.totalCoins = 0;
         Debug.Log("You died and lost all your coins!");
         Timer.timeLeft = 60f;
+        Timer1.timeLeft = 90f;
+        Timer2.timeLeft = 300f;
     }
 }
