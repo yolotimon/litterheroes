@@ -21,7 +21,7 @@ public class Level3Finish : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && SC_2DCoin.totalCoins >= 20)
+        if (collision.gameObject.CompareTag("Player") && SC_2DCoin.totalCoins == 22)
         {
             SceneManager.LoadScene("level3end");
             Debug.Log("Level completed");
@@ -29,7 +29,7 @@ public class Level3Finish : MonoBehaviour
             PowerUpPick.PowerUps = 0;
         }
 
-        else if (collision.gameObject.CompareTag("Player") && SC_2DCoin.totalCoins < 20)
+        else if (collision.gameObject.CompareTag("Player") && SC_2DCoin.totalCoins < 22)
         {
             Debug.Log("Not enough coins");
         }

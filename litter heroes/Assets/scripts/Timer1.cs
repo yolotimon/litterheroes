@@ -8,7 +8,7 @@ public class Timer1 : MonoBehaviour
 {
 
     TextMeshProUGUI text;
-    public static float timeLeft = 90f;
+    public static float timeLeft = 120f;
 
     // Start is called before the first frame update
     void Start()
