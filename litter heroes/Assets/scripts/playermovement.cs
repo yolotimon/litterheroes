@@ -88,5 +88,4 @@ void Update()
             Destroy(collision.gameObject);
         }
     }
-
 }
