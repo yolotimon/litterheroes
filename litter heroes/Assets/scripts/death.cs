@@ -54,6 +54,6 @@ public class death : MonoBehaviour
         Debug.Log("You died and lost all your coins!");
         Timer.timeLeft = 60f;
         Timer1.timeLeft = 90f;
-        Timer2.timeLeft = 300f;
+        Timer2.timeLeft = 260f;
     }
 }
